@@ -1,9 +1,13 @@
 {
   "name": "nodejs-docker-example",
   "scripts": {
-    "test": "mocha ./test.js"
+    "start": "node app.js"
   },
   "devDependencies": {
     "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "morgan": "^1.9.0"
   }
 }
