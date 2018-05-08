@@ -23,10 +23,10 @@ node {
   }
 
   stage('Build') {
-    sh "docker-compose build"
+    sh "npm run build"
   }
 
   stage('Deploy') {
-    sh "./mvnw -Paws deploy -DskipTests=true -DskipITs=true -DskipUnitTests=true -Dbeanstalk.cnamePrefix=packt-spring-env-test.b4dytngfpm.us-east-1"
+    sh "npm run deploy"
   }
 }
