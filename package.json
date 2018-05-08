@@ -1,10 +1,19 @@
 {
   "name": "nodejs-docker-example",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "build": "gulp js",
+    "deploy": "gulp deploy"
   },
   "devDependencies": {
-    "mocha": "^2.4.5"
+    "del": "3.0.0",
+    "gulp": "3.9.1",
+    "gulp-copy": "1.1.0",
+    "gulp-install": "1.1.0",
+    "gulp-zip": "4.1.0",
+    "mocha": "^2.4.5",
+    "node-aws-beanstalk": "3.4.8",
+    "run-sequence": "2.2.1"
   },
   "dependencies": {
     "express": "^4.16.3",
