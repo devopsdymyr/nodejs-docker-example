@@ -23,6 +23,7 @@ node {
   }
 
   stage('Build') {
+    sh "npm i"
     sh "npm run build"
   }
 
