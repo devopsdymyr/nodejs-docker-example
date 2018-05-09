@@ -49,6 +49,7 @@ gulp.task('deploy', function(callback) {
     ['clean'],
     ['js', 'node-mods'],
     ['zip'],
+    ['update'],
     ['upload'],
     callback
   );
