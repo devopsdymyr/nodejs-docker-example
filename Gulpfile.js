@@ -36,7 +36,7 @@ gulp.task('zip', function() {
 });
 
 gulp.task('upload', function(callback) {
-  awsBeanstalk.deploy('./dist.zip', config, callback,console.log);
+  awsBeanstalk.deploy('./dist.zip', config, callback, console.log);
 });
 
 // update task can be used to update the configured environment
